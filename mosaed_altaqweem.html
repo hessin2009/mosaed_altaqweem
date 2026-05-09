@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مساعد التقويم والاعتماد المدرسي | حسين أحمد جمعان الغامدي</title>
+<style>
+:root{
+  --moe-green:#0b7f5f;--moe-green2:#27a77c;--moe-blue:#315ca8;--etec-purple:#3b2f86;--aqua:#2fb9c5;--gold:#d8a74e;--red:#d95862;--ink:#1d2633;--muted:#687386;--bg:#f4f7fb;--card:#fff;--line:#e4eaf2;--soft:#eef8f5;
+  --shadow:0 14px 36px rgba(20,33,61,.10);--radius:18px;
+}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#f7fafc,#eef4f8 42%,#f6fbf9);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);line-height:1.7} 
+.app{max-width:1280px;margin:auto;padding:16px 14px 96px}.hero{position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(135deg,var(--etec-purple),#273979 58%,var(--moe-green));color:#fff;padding:28px;box-shadow:var(--shadow);min-height:200px}.hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 18% 18%,rgba(255,255,255,.17),transparent 22%),radial-gradient(circle at 90% 5%,rgba(47,185,197,.20),transparent 20%),linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.08) 58% 61%,transparent 61%);pointer-events:none}.hero h1{margin:0;font-size:clamp(24px,5vw,42px);font-weight:900;letter-spacing:-.5px}.hero p{max-width:850px;margin:8px 0 0;color:#edf7ff;font-size:16px}.badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);padding:7px 12px;border-radius:999px;margin:4px 0 12px}.author{position:absolute;left:24px;bottom:18px;background:rgba(255,255,255,.16);padding:8px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.25)}
+.toolbar{position:sticky;top:0;z-index:5;margin:14px 0;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:10px;display:flex;gap:8px;overflow:auto;box-shadow:0 8px 20px rgba(0,0,0,.04)}button,.btn{border:0;border-radius:13px;padding:10px 14px;font-weight:800;cursor:pointer;background:#eef2f7;color:#263548;white-space:nowrap}button:hover,.btn:hover{filter:brightness(.98)}.primary{background:linear-gradient(135deg,var(--moe-green),var(--moe-blue));color:white}.gold{background:#fff3d9;color:#735014}.danger{background:#ffecef;color:#9f2730}.ghost{background:white;border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-6{grid-column:span 6}.span-4{grid-column:span 4}.span-3{grid-column:span 3}@media(max-width:900px){.span-8,.span-6,.span-4,.span-3{grid-column:span 12}.author{position:static;margin-top:16px;width:max-content}.hero{padding:22px}.toolbar{top:0}}
+h2{margin:0 0 10px;font-size:22px}h3{margin:0 0 8px;font-size:18px}.muted{color:var(--muted);font-size:13px}.kpi{display:flex;align-items:center;justify-content:space-between;border-radius:16px;padding:14px;background:linear-gradient(135deg,#fff,#f4faf8);border:1px solid var(--line)}.kpi b{font-size:26px;color:var(--moe-green)}.section{display:none}.section.active{display:block}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tab.active{background:var(--etec-purple);color:white}
+label{display:block;font-weight:800;margin:8px 0 4px}input,select,textarea{width:100%;border:1px solid #d8e1ee;border-radius:13px;padding:11px 12px;font:inherit;background:#fff;color:var(--ink)}textarea{min-height:90px;resize:vertical}.row{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}.col-6{grid-column:span 6}.col-4{grid-column:span 4}.col-3{grid-column:span 3}.col-12{grid-column:span 12}@media(max-width:760px){.col-6,.col-4,.col-3{grid-column:span 12}}
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;background:white;min-width:850px}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:right;vertical-align:top}th{background:#f1f6fb;color:#20344d;font-size:13px}.pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:800;background:#eaf7f1;color:#087355}.pill.mid{background:#fff5dd;color:#7b5512}.pill.low{background:#ffecef;color:#9d2733}.pill.high{background:#eef1ff;color:#392f86}.checklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}.check{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:13px;padding:9px;background:#fff}.check input{width:auto;margin-top:6px}.scorebar{height:12px;background:#edf1f6;border-radius:999px;overflow:hidden}.scorebar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold),var(--moe-green));width:0}.note{background:#fffdf5;border:1px solid #f2dfad;border-radius:14px;padding:12px;color:#5f4718}.source{background:#f6f5ff;border:1px solid #dedaf9;border-radius:14px;padding:12px;color:#3b2f86}.hidden{display:none!important}.report-page{background:white;color:#111;padding:28px;max-width:950px;margin:auto}.report-head{border-radius:18px;background:linear-gradient(135deg,var(--etec-purple),var(--moe-green));color:white;padding:22px;margin-bottom:18px}.sign{display:flex;justify-content:space-between;margin-top:35px;gap:20px}.sigbox{border-top:1px solid #555;padding-top:8px;min-width:220px;text-align:center}.mini{font-size:12px;color:#667}.logoMark{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#fff,var(--aqua));display:grid;place-items:center;color:var(--etec-purple);font-weight:900;box-shadow:inset 0 0 0 3px rgba(255,255,255,.4)}
+@media print{body{background:white}.app>.hero,.toolbar,.no-print,.section:not(.printable){display:none!important}.app{padding:0;max-width:none}.card{box-shadow:none;border:0}.printable{display:block!important}.report-page{padding:0}.report-head{print-color-adjust:exact;-webkit-print-color-adjust:exact}button{display:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="hero">
+    <div class="badge"><span class="logoMark">تميّز</span><span>مساعد الرصد والمتابعة والزيارة والتقارير</span></div>
+    <h1>مساعد التقويم والاعتماد المدرسي</h1>
+    <p>ملف HTML يعمل على الجهاز بدون إنترنت، يساعدك في رصد الشواهد، متابعة الخطة، تنفيذ الزيارات الصفية، تحليل الوثائق، إجراء المقابلات، وطباعة تقارير احترافية مستوحاة من ألوان وتنسيقات هوية التعليم والتقويم المدرسي.</p>
+    <div class="author">توثيق العمل: <b>حسين أحمد جمعان الغامدي</b></div>
+  </header>
+
+  <nav class="toolbar no-print" id="nav"></nav>
+
+  <section id="dashboard" class="section active">
+    <div class="grid">
+      <div class="card span-12">
+        <h2>لوحة المؤشرات</h2>
+        <div class="grid" id="kpis"></div>
+      </div>
+      <div class="card span-8">
+        <h2>ملف المدرسة</h2>
+        <div class="row">
+          <div class="col-4"><label>اسم المدرسة</label><input id="schoolName" data-profile placeholder="مثال: مجمع بلعلاء التعليمي"></div>
+          <div class="col-4"><label>مدير المدرسة</label><input id="principal" data-profile></div>
+          <div class="col-4"><label>الفصل الدراسي/العام</label><input id="term" data-profile placeholder="1447هـ"></div>
+          <div class="col-4"><label>منسق التقويم</label><input id="coordinator" data-profile value="حسين أحمد جمعان الغامدي"></div>
+          <div class="col-4"><label>المرحلة</label><select id="stage" data-profile><option>ابتدائي</option><option>متوسط</option><option>ثانوي</option><option>مجمع تعليمي</option></select></div>
+          <div class="col-4"><label>حالة المتابعة</label><select id="status" data-profile><option>قيد الإعداد</option><option>قيد التنفيذ</option><option>جاهز للمراجعة</option><option>مكتمل</option></select></div>
+        </div>
+      </div>
+      <div class="card span-4">
+        <h2>حفظ واسترجاع</h2>
+        <p class="muted">يتم الحفظ تلقائيًا داخل متصفح الجهاز. يمكن تصدير نسخة احتياطية بصيغة JSON ثم استيرادها لاحقًا.</p>
+        <button class="primary" onclick="saveAll(true)">حفظ الآن</button>
+        <button class="ghost" onclick="exportData()">تصدير نسخة احتياطية</button>
+        <label class="btn ghost" for="importFile">استيراد نسخة</label><input class="hidden" type="file" id="importFile" accept="application/json">
+        <button class="danger" onclick="resetAll()">مسح البيانات</button>
+      </div>
+      <div class="card span-12 source">
+        <b>ملاحظة منهجية:</b> بُنيت نماذج هذا الملف على فكرة التقويم المدرسي بوصفه عملية مستمرة لجمع البيانات وتحليلها والحكم على مستوى الجودة، وعلى أدوات التقويم الواردة في الأدلة: تحليل الوثائق، المقابلات، الملاحظة الصفية، الشواهد، وخطط التحسين. هذا الملف مساعد تنظيمي داخلي ولا يغني عن الرجوع إلى النسخ الرسمية المعتمدة عند الرفع النهائي.
+      </div>
+    </div>
+  </section>
+
+  <section id="self" class="section">
+    <div class="card"><h2>رصد معايير التقويم والتصنيف والاعتماد المدرسي</h2><p class="muted">قيّم المؤشرات، وحدد الشواهد المتوفرة وفرص التحسين. النتيجة تُحتسب تلقائيًا في لوحة المؤشرات والتقرير.</p><div class="tabs" id="domainTabs"></div><div id="standardsBox"></div></div>
+  </section>
+
+  <section id="evidence" class="section">
+    <div class="card"><h2>سجل الشواهد والأدلة</h2><div class="row">
+      <div class="col-3"><label>المجال</label><select id="evDomain"></select></div><div class="col-3"><label>المعيار/المؤشر</label><input id="evIndicator" placeholder="مثال: 1-1-1-1"></div><div class="col-3"><label>نوع الشاهد</label><select id="evType"><option>وثيقة</option><option>صورة</option><option>رابط</option><option>محضر</option><option>تقرير</option><option>سجل</option></select></div><div class="col-3"><label>مصدر الشاهد</label><input id="evSource" placeholder="مدير المدرسة / رائد النشاط..."></div>
+      <div class="col-6"><label>اسم الشاهد</label><input id="evTitle"></div><div class="col-3"><label>درجة الاكتمال</label><select id="evComplete"><option>مكتمل</option><option>بحاجة استكمال</option><option>غير متوفر</option></select></div><div class="col-3"><label>تاريخ الرصد</label><input id="evDate" type="date"></div>
+      <div class="col-12"><label>ملاحظات</label><textarea id="evNotes"></textarea></div><div class="col-12"><button class="primary" onclick="addEvidence()">إضافة الشاهد</button></div>
+    </div></div><div class="card"><div id="evidenceTable"></div></div>
+  </section>
+
+  <section id="docs" class="section">
+    <div class="card"><h2>أداة تحليل الوثائق</h2><p class="muted">مناسبة لتحليل الخطة التشغيلية، سجلات البرامج، محاضر اللجان، سجلات المتابعة، وسجلات الأمن والسلامة.</p><div class="row">
+      <div class="col-4"><label>الوثيقة</label><input id="docName" placeholder="سجل الخطة التشغيلية"></div><div class="col-4"><label>المصدر</label><input id="docSource" placeholder="مدير المدرسة"></div><div class="col-4"><label>المؤشر المرتبط</label><input id="docIndicator" placeholder="1-1-1-1"></div>
+      <div class="col-12"><label>الشواهد المتحققة</label><div class="checklist" id="docChecks"></div></div>
+      <div class="col-4"><label>التقييم</label><select id="docRate"><option>متحقق بدرجة منخفضة</option><option>متحقق بدرجة متوسطة</option><option>متحقق بدرجة مرتفعة</option><option>متحقق بدرجة مرتفعة جدًا</option></select></div>
+      <div class="col-8"><label>فرص التحسين</label><input id="docImprove"></div><div class="col-12"><button class="primary" onclick="addDocAnalysis()">حفظ تحليل الوثيقة</button></div>
+    </div></div><div class="card"><div id="docsTable"></div></div>
+  </section>
+
+  <section id="visits" class="section">
+    <div class="card"><h2>أداة الملاحظة الصفية والزيارات</h2><div class="row">
+      <div class="col-3"><label>اسم المعلم</label><input id="vTeacher"></div><div class="col-3"><label>المادة</label><input id="vSubject"></div><div class="col-3"><label>الصف/الفصل</label><input id="vClass"></div><div class="col-3"><label>تاريخ الزيارة</label><input id="vDate" type="date"></div>
+      <div class="col-4"><label>نوع الزيارة</label><select id="vType"><option>زيارة صفية</option><option>زيارة متابعة</option><option>زيارة دعم وتحسين</option><option>زيارة اعتماد داخلي</option></select></div><div class="col-4"><label>المجال</label><select id="vDomain"><option>بناء خبرات التعلم</option><option>تقويم التعلم</option><option>إدارة بيئة التعلم</option><option>دعم نواتج التعلم</option></select></div><div class="col-4"><label>زمن الحصة</label><input id="vTime" placeholder="مثال: الحصة الثالثة"></div>
+      <div class="col-12"><label>المشاهدات المتوقعة</label><div class="checklist" id="visitChecks"></div></div>
+      <div class="col-6"><label>نقاط القوة</label><textarea id="vStrength"></textarea></div><div class="col-6"><label>فرص التحسين والتوصيات</label><textarea id="vImprove"></textarea></div>
+      <div class="col-12"><button class="primary" onclick="addVisit()">حفظ الزيارة</button> <button class="ghost" onclick="printVisitDraft()">طباعة نموذج فارغ</button></div>
+    </div></div><div class="card"><div id="visitsTable"></div></div>
+  </section>
+
+  <section id="interviews" class="section">
+    <div class="card"><h2>أداة المقابلات</h2><div class="row">
+      <div class="col-3"><label>الفئة المستهدفة</label><select id="iTarget"><option>مدير المدرسة</option><option>وكيل المدرسة</option><option>معلم</option><option>طالب</option><option>ولي أمر</option><option>رائد النشاط</option><option>الموجه الطلابي</option></select></div><div class="col-3"><label>المحور</label><input id="iAxis" placeholder="التخطيط / الانضباط / الشراكة"></div><div class="col-3"><label>التاريخ</label><input id="iDate" type="date"></div><div class="col-3"><label>التقييم</label><select id="iRate"><option>متحقق بدرجة منخفضة</option><option>متحقق بدرجة متوسطة</option><option>متحقق بدرجة مرتفعة</option><option>متحقق بدرجة مرتفعة جدًا</option></select></div>
+      <div class="col-12"><label>السؤال الرئيس</label><input id="iQuestion" placeholder="كيف تطبق المدرسة إجراءات متابعة خطتها التشغيلية وتطويرها؟"></div>
+      <div class="col-12"><label>الإجابات/المؤشرات المتوقعة</label><div class="checklist" id="interviewChecks"></div></div>
+      <div class="col-12"><label>ملخص الإجابة الفعلية</label><textarea id="iSummary"></textarea></div><div class="col-12"><button class="primary" onclick="addInterview()">حفظ المقابلة</button></div>
+    </div></div><div class="card"><div id="interviewsTable"></div></div>
+  </section>
+
+  <section id="follow" class="section">
+    <div class="card"><h2>خطة المتابعة والتحسين</h2><div class="row">
+      <div class="col-3"><label>المجال</label><select id="tDomain"></select></div><div class="col-3"><label>الأولوية</label><select id="tPriority"><option>عالية</option><option>متوسطة</option><option>منخفضة</option></select></div><div class="col-3"><label>المسؤول</label><input id="tOwner"></div><div class="col-3"><label>تاريخ الإنجاز المستهدف</label><input id="tDue" type="date"></div>
+      <div class="col-6"><label>فرصة التحسين</label><textarea id="tGap"></textarea></div><div class="col-6"><label>الإجراء المقترح</label><textarea id="tAction"></textarea></div><div class="col-3"><label>حالة التنفيذ</label><select id="tStatus"><option>لم يبدأ</option><option>قيد التنفيذ</option><option>مكتمل</option><option>متعثر</option></select></div><div class="col-9"><label>مؤشر التحقق</label><input id="tProof"></div><div class="col-12"><button class="primary" onclick="addTask()">إضافة إجراء</button></div>
+    </div></div><div class="card"><div id="tasksTable"></div></div>
+  </section>
+
+  <section id="reports" class="section printable">
+    <div class="card no-print"><h2>التقارير والطباعة</h2><p class="muted">أنشئ التقرير ثم استخدم زر الطباعة، ومن نافذة الطباعة في الآيفون اختر مشاركة ثم حفظ في الملفات بصيغة PDF.</p><button class="primary" onclick="buildReport();window.print()">إنشاء وطباعة التقرير الشامل</button> <button class="ghost" onclick="buildReport()">تحديث معاينة التقرير</button></div>
+    <div id="reportBox" class="report-page"></div>
+  </section>
+</div>
+<script>
+const AUTHOR='حسين أحمد جمعان الغامدي';
+const STORAGE='mosaed_taqweem_hussein_v1';
+const navItems=[['dashboard','الرئيسية'],['self','رصد المعايير'],['evidence','الشواهد'],['docs','تحليل الوثائق'],['visits','الزيارات الصفية'],['interviews','المقابلات'],['follow','خطة التحسين'],['reports','التقارير']];
+const domains=[
+ {id:'management',name:'الإدارة المدرسية',desc:'التخطيط، قيادة العملية التعليمية، المجتمع المدرسي، التطوير المؤسسي.',standards:[
+  ['التخطيط','1-1','تضع المدرسة خطة تشغيلية شاملة وفق أهداف تطويرية محددة.'],['متابعة الخطة','1-1','تتابع المدرسة تنفيذ خطتها التشغيلية وتطورها بما يضمن تحقيق أهدافها.'],['القيم والهوية الوطنية','1-2','تعزز المدرسة القيم الإسلامية والهوية الوطنية.'],['أخلاقيات مهنة التعليم','1-2','تطبق المدرسة قيم مهنة التعليم وأخلاقياتها وتتابع الالتزام بها.'],['الانضباط المدرسي','1-2','تطبق المدرسة إجراءات محددة لدعم الانضباط المدرسي.'],['الشراكة المجتمعية','1-3','تعزز المدرسة الشراكة مع الأسرة والمجتمع المحلي.'],['التطوير المؤسسي','1-4','تستخدم نتائج التقويم في التطوير والتحسين المستمر.']]
+ },
+ {id:'teaching',name:'التعليم والتعلم',desc:'بناء خبرات التعلم، تنفيذ المناهج، استراتيجيات التدريس، تقويم التعلم.',standards:[
+  ['بناء خبرات التعلم','2-1','توفر المدرسة فرصًا متكافئة للتعلم تلبي احتياجات المتعلمين.'],['تنفيذ المناهج','2-1','تدعم المدرسة تنفيذ المناهج لتحقيق نواتج التعلم المستهدفة.'],['استراتيجيات التدريس','2-1','تتنوع طرائق التدريس والأنشطة بما يدعم تعلم جميع الفئات.'],['تقويم التعلم','2-2','تستخدم المدرسة أساليب متنوعة لتقويم تعلم الطلاب وتقديم التغذية الراجعة.']]
+ },
+ {id:'outcomes',name:'نواتج التعلم',desc:'التحصيل التعليمي، التطور الشخصي والصحي والاجتماعي، القيم والمهارات.',standards:[
+  ['التحصيل التعليمي','3-1','يحقق المتعلمون نتائج مرتفعة وتقدمًا في القراءة والرياضيات والعلوم.'],['القيم والهوية','3-2','يظهر المتعلمون الاعتزاز بالقيم والهوية الوطنية.'],['المهارات الشخصية والاجتماعية','3-2','ينمو لدى المتعلمين الوعي الصحي والاجتماعي ومهارات المستقبل.']]
+ },
+ {id:'environment',name:'البيئة المدرسية',desc:'المبنى المدرسي، التجهيزات، الأمن والسلامة، الصيانة.',standards:[
+  ['المبنى المدرسي','4-1','توفر المدرسة مبنى وتجهيزات ومرافق تلبي احتياجات المتعلمين.'],['الأمن والسلامة','4-2','تتوفر في مبنى المدرسة ومرافقها متطلبات الأمن والسلامة.'],['الصيانة والمتابعة','4-2','تتابع المدرسة صيانة المبنى والمرافق والتجهيزات بشكل دوري.']]
+ }];
+const docEvidence=['وجود خطة تشغيلية مكتملة العناصر','الأهداف محددة وواضحة وقابلة للقياس','البرامج والأنشطة مرتبطة بالأهداف التطويرية','تحديد الأدوار والمسؤوليات بوضوح','وجود خطة متابعة مزمنة','توثيق إجراءات التنفيذ والمتابعة','تحليل نتائج التقويم وتحديد فرص التحسين','وجود محاضر اجتماعات أو لجان داعمة','مراعاة ذوي الإعاقة والموهوبين','وجود مؤشرات أداء ومراجعة دورية'];
+const visitEvidence=['تنوع مصادر وأنشطة التعلم','مراعاة الفروق الفردية بين المتعلمين','تلبية احتياجات ذوي الإعاقة والموهوبين','إدارة الوقت بفاعلية خلال مراحل الدرس','إتاحة فرص متكافئة للمشاركة والمناقشة','توافق تنفيذ المحتوى مع الخطة الزمنية','استخدام استراتيجيات تعلم نشط','تقديم تغذية راجعة واضحة','توظيف التقنية أو مصادر التعلم المناسبة','تهيئة بيئة صفية آمنة ومحفزة','وجود تقويم بنائي أثناء الدرس','إغلاق الدرس بربط النتائج بالأهداف'];
+const interviewEvidence=['تشخيص واقع المدرسة وتحليل الاحتياج','تحديد أهداف تطويرية واضحة','تحديد البرامج والمبادرات النوعية','تحديد متطلبات التنفيذ والمسؤوليات','عقد اجتماعات دورية للمتابعة','توثيق التقدم المحرز','تحديد المشكلات والعوائق','اقتراح حلول وبدائل للتحسين','تقديم دعم وتحفيز لمنسوبي المدرسة','تفعيل التواصل مع الأسرة والمجتمع'];
+let state={profile:{coordinator:AUTHOR},ratings:{},evidence:[],docs:[],visits:[],interviews:[],tasks:[]};
+function init(){document.getElementById('nav').innerHTML=navItems.map(([id,t])=>`<button onclick="showSec('${id}')" id="nav_${id}" class="${id==='dashboard'?'primary':''}">${t}</button>`).join('');
+ domains.forEach(d=>{['evDomain','tDomain'].forEach(id=>{let o=document.createElement('option');o.value=d.name;o.textContent=d.name;document.getElementById(id).appendChild(o)})});
+ document.getElementById('docChecks').innerHTML=docEvidence.map(x=>checkHTML(x,'doc')).join('');document.getElementById('visitChecks').innerHTML=visitEvidence.map(x=>checkHTML(x,'visit')).join('');document.getElementById('interviewChecks').innerHTML=interviewEvidence.map(x=>checkHTML(x,'int')).join('');
+ loadAll();renderDomains();renderAll();document.querySelectorAll('[data-profile]').forEach(el=>el.addEventListener('input',()=>{state.profile[el.id]=el.value;saveAll()}));document.getElementById('importFile').addEventListener('change',importData);buildReport();}
+function checkHTML(x,p){return `<label class="check"><input type="checkbox" data-${p} value="${esc(x)}"><span>${x}</span></label>`}
+function showSec(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('#nav button').forEach(b=>b.className='');document.getElementById('nav_'+id).className='primary';if(id==='reports')buildReport();}
+function renderDomains(){document.getElementById('domainTabs').innerHTML=domains.map((d,i)=>`<button class="tab ${i==0?'active':''}" onclick="renderStandards('${d.id}',this)">${d.name}</button>`).join('');renderStandards(domains[0].id)}
+function renderStandards(id,btn){if(btn){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active')}let d=domains.find(x=>x.id===id);let html=`<div class="note"><b>${d.name}</b><br>${d.desc}</div><br>`;html+=d.standards.map((s,idx)=>{let key=id+'_'+idx;let r=state.ratings[key]||{rate:'غير مرصود',notes:'',evidence:''};return `<div class="card" style="box-shadow:none;margin-bottom:12px"><h3>${s[0]} <span class="pill high">${s[1]}</span></h3><p>${s[2]}</p><div class="row"><div class="col-3"><label>مستوى التحقق</label><select onchange="rate('${key}','rate',this.value)"><option ${sel(r.rate,'غير مرصود')}>غير مرصود</option><option ${sel(r.rate,'منخفض')}>منخفض</option><option ${sel(r.rate,'متوسط')}>متوسط</option><option ${sel(r.rate,'مرتفع')}>مرتفع</option><option ${sel(r.rate,'مرتفع جدًا')}>مرتفع جدًا</option></select></div><div class="col-4"><label>الشواهد الداعمة</label><input value="${esc(r.evidence)}" onchange="rate('${key}','evidence',this.value)" placeholder="سجل/تقرير/رابط..."></div><div class="col-5"><label>ملاحظات وفرص تحسين</label><input value="${esc(r.notes)}" onchange="rate('${key}','notes',this.value)"></div></div></div>`}).join('');document.getElementById('standardsBox').innerHTML=html}
+function rate(k,f,v){state.ratings[k]=state.ratings[k]||{};state.ratings[k][f]=v;saveAll();renderKpis()}
+function sel(a,b){return a===b?'selected':''}
+function val(id){return document.getElementById(id).value.trim()} function setToday(id){if(!val(id))document.getElementById(id).value=new Date().toISOString().slice(0,10)}
+function checked(prefix){return [...document.querySelectorAll(`[data-${prefix}]:checked`)].map(x=>x.value)} function clearChecks(prefix){document.querySelectorAll(`[data-${prefix}]`).forEach(x=>x.checked=false)}
+function addEvidence(){setToday('evDate');state.evidence.push({domain:val('evDomain'),indicator:val('evIndicator'),type:val('evType'),source:val('evSource'),title:val('evTitle'),complete:val('evComplete'),date:val('evDate'),notes:val('evNotes')});['evIndicator','evSource','evTitle','evNotes'].forEach(id=>document.getElementById(id).value='');saveAll(true);renderAll()}
+function addDocAnalysis(){let items=checked('doc');state.docs.push({name:val('docName'),source:val('docSource'),indicator:val('docIndicator'),items,rate:val('docRate'),improve:val('docImprove'),date:new Date().toISOString().slice(0,10)});['docName','docSource','docIndicator','docImprove'].forEach(id=>document.getElementById(id).value='');clearChecks('doc');saveAll(true);renderAll()}
+function addVisit(){setToday('vDate');let items=checked('visit');state.visits.push({teacher:val('vTeacher'),subject:val('vSubject'),className:val('vClass'),date:val('vDate'),type:val('vType'),domain:val('vDomain'),time:val('vTime'),items,strength:val('vStrength'),improve:val('vImprove')});['vTeacher','vSubject','vClass','vTime','vStrength','vImprove'].forEach(id=>document.getElementById(id).value='');clearChecks('visit');saveAll(true);renderAll()}
+function addInterview(){setToday('iDate');let items=checked('int');state.interviews.push({target:val('iTarget'),axis:val('iAxis'),date:val('iDate'),rate:val('iRate'),question:val('iQuestion'),items,summary:val('iSummary')});['iAxis','iQuestion','iSummary'].forEach(id=>document.getElementById(id).value='');clearChecks('int');saveAll(true);renderAll()}
+function addTask(){state.tasks.push({domain:val('tDomain'),priority:val('tPriority'),owner:val('tOwner'),due:val('tDue'),gap:val('tGap'),action:val('tAction'),status:val('tStatus'),proof:val('tProof')});['tOwner','tDue','tGap','tAction','tProof'].forEach(id=>document.getElementById(id).value='');saveAll(true);renderAll()}
+function renderAll(){renderKpis();renderEvidence();renderDocs();renderVisits();renderInterviews();renderTasks();buildReport(false)}
+function renderKpis(){let vals=Object.values(state.ratings).map(x=>x.rate).filter(x=>x&&x!=='غير مرصود');let score= vals.length? Math.round(vals.reduce((a,b)=>a+({منخفض:1,متوسط:2,مرتفع:3,'مرتفع جدًا':4}[b]||0),0)/(vals.length*4)*100):0;let completed=state.tasks.filter(t=>t.status==='مكتمل').length;document.getElementById('kpis').innerHTML=[['نسبة التحقق',score+'%'],['الشواهد',state.evidence.length],['الزيارات',state.visits.length],['تحليل الوثائق',state.docs.length],['المقابلات',state.interviews.length],['إجراءات مكتملة',completed+'/'+state.tasks.length]].map(x=>`<div class="span-4"><div class="kpi"><span>${x[0]}</span><b>${x[1]}</b></div></div>`).join('')}
+function table(rows,heads,mapper){if(!rows.length)return '<p class="muted">لا توجد بيانات مسجلة بعد.</p>';return `<div class="tablewrap"><table><thead><tr>${heads.map(h=>`<th>${h}</th>`).join('')}<th class="no-print">إجراء</th></tr></thead><tbody>${rows.map((r,i)=>`<tr>${mapper(r,i)}<td class="no-print"><button class="danger" onclick="delRow('${rows._name}',${i})">حذف</button></td></tr>`).join('')}</tbody></table></div>`}
+function renderEvidence(){let a=state.evidence;a._name='evidence';document.getElementById('evidenceTable').innerHTML=table(a,['التاريخ','المجال','المؤشر','الشاهد','الحالة','ملاحظات'],r=>`<td>${r.date||''}</td><td>${r.domain||''}</td><td>${r.indicator||''}</td><td><b>${r.title||''}</b><br><span class="mini">${r.type||''} - ${r.source||''}</span></td><td>${badge(r.complete)}</td><td>${r.notes||''}</td>`)}
+function renderDocs(){let a=state.docs;a._name='docs';document.getElementById('docsTable').innerHTML=table(a,['الوثيقة','المصدر','المؤشر','الشواهد','التقييم','التحسين'],r=>`<td>${r.name||''}</td><td>${r.source||''}</td><td>${r.indicator||''}</td><td>${(r.items||[]).join('، ')}</td><td>${badge(r.rate)}</td><td>${r.improve||''}</td>`)}
+function renderVisits(){let a=state.visits;a._name='visits';document.getElementById('visitsTable').innerHTML=table(a,['التاريخ','المعلم','المادة/الفصل','المجال','المشاهدات','التوصيات'],r=>`<td>${r.date||''}<br><span class="mini">${r.type||''}</span></td><td>${r.teacher||''}</td><td>${r.subject||''}<br>${r.className||''}</td><td>${r.domain||''}</td><td>${(r.items||[]).slice(0,4).join('، ')}${(r.items||[]).length>4?'...':''}</td><td>${r.improve||''}</td>`)}
+function renderInterviews(){let a=state.interviews;a._name='interviews';document.getElementById('interviewsTable').innerHTML=table(a,['التاريخ','الفئة','المحور','السؤال','التقييم','ملخص'],r=>`<td>${r.date||''}</td><td>${r.target||''}</td><td>${r.axis||''}</td><td>${r.question||''}</td><td>${badge(r.rate)}</td><td>${r.summary||''}</td>`)}
+function renderTasks(){let a=state.tasks;a._name='tasks';document.getElementById('tasksTable').innerHTML=table(a,['المجال','الأولوية','فرصة التحسين','الإجراء','المسؤول','الموعد','الحالة'],r=>`<td>${r.domain||''}</td><td>${badge(r.priority)}</td><td>${r.gap||''}</td><td>${r.action||''}<br><span class="mini">مؤشر التحقق: ${r.proof||''}</span></td><td>${r.owner||''}</td><td>${r.due||''}</td><td>${badge(r.status)}</td>`)}
+function badge(t){let c=(t||'').includes('منخفض')||t==='متعثر'||t==='غير متوفر'?'low':((t||'').includes('متوسط')||t==='قيد التنفيذ'||t==='بحاجة استكمال'?'mid':'');return `<span class="pill ${c}">${t||''}</span>`}
+function delRow(name,i){if(confirm('هل تريد حذف هذا السجل؟')){state[name].splice(i,1);saveAll(true);renderAll()}}
+function saveAll(toast=false){document.querySelectorAll('[data-profile]').forEach(el=>state.profile[el.id]=el.value);localStorage.setItem(STORAGE,JSON.stringify(state));if(toast)alert('تم الحفظ بنجاح')}
+function loadAll(){try{let s=localStorage.getItem(STORAGE);if(s)state=JSON.parse(s)}catch(e){};document.querySelectorAll('[data-profile]').forEach(el=>{if(state.profile&&state.profile[el.id]!=null)el.value=state.profile[el.id]})}
+function resetAll(){if(confirm('سيتم مسح جميع البيانات المحفوظة في هذا المتصفح. هل أنت متأكد؟')){localStorage.removeItem(STORAGE);location.reload()}}
+function exportData(){saveAll();let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='نسخة_مساعد_التقويم_'+new Date().toISOString().slice(0,10)+'.json';a.click()}
+function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);saveAll(true);location.reload()}catch(err){alert('تعذر استيراد الملف. تأكد من أنه نسخة JSON صحيحة.')}};r.readAsText(f)}
+function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
+function avgScore(){let vals=Object.values(state.ratings).map(x=>x.rate).filter(x=>x&&x!=='غير مرصود');return vals.length? Math.round(vals.reduce((a,b)=>a+({منخفض:1,متوسط:2,مرتفع:3,'مرتفع جدًا':4}[b]||0),0)/(vals.length*4)*100):0}
+function buildReport(){let p=state.profile||{};let low=Object.entries(state.ratings).filter(([k,v])=>['منخفض','متوسط'].includes(v.rate));let topVisits=state.visits.slice(-8).reverse();let actions=state.tasks.filter(t=>t.status!=='مكتمل');document.getElementById('reportBox').innerHTML=`<div class="report-head"><h1>تقرير المتابعة والتقويم المدرسي</h1><p>المدرسة: ${p.schoolName||'غير محدد'} | العام: ${p.term||''}</p><p>إعداد وتوثيق: <b>${AUTHOR}</b></p></div><h2>ملخص تنفيذي</h2><p>بلغت نسبة التحقق المرصودة ${avgScore()}% بناءً على المؤشرات المدخلة في هذا الملف. تم تسجيل ${state.evidence.length} شاهدًا، و${state.docs.length} تحليل وثيقة، و${state.visits.length} زيارة صفية/متابعة، و${state.interviews.length} مقابلة، و${state.tasks.length} إجراءً في خطة التحسين.</p><div class="scorebar"><i style="width:${avgScore()}%"></i></div><h2>أبرز فرص التحسين</h2>${low.length?'<ul>'+low.slice(0,10).map(([k,v])=>`<li>${v.notes||'مؤشر بحاجة إلى متابعة'} - <b>${v.rate}</b></li>`).join('')+'</ul>':'<p>لا توجد مؤشرات منخفضة أو متوسطة مرصودة حتى الآن.</p>'}<h2>آخر الزيارات الصفية</h2>${topVisits.length?'<table><tr><th>التاريخ</th><th>المعلم</th><th>المادة</th><th>أبرز التوصيات</th></tr>'+topVisits.map(v=>`<tr><td>${v.date||''}</td><td>${v.teacher||''}</td><td>${v.subject||''}</td><td>${v.improve||''}</td></tr>`).join('')+'</table>':'<p>لا توجد زيارات مسجلة.</p>'}<h2>إجراءات المتابعة المفتوحة</h2>${actions.length?'<table><tr><th>المجال</th><th>الإجراء</th><th>المسؤول</th><th>الموعد</th><th>الحالة</th></tr>'+actions.map(t=>`<tr><td>${t.domain||''}</td><td>${t.action||''}</td><td>${t.owner||''}</td><td>${t.due||''}</td><td>${t.status||''}</td></tr>`).join('')+'</table>':'<p>لا توجد إجراءات مفتوحة.</p>'}<div class="sign"><div class="sigbox">منسق/معد التقرير<br>${AUTHOR}</div><div class="sigbox">مدير المدرسة</div></div><p class="mini">تقرير مولد من ملف HTML محلي، مستوحى بصريًا من هوية التعليم والتقويم المدرسي.</p>`}
+function printVisitDraft(){let old=document.getElementById('reportBox').innerHTML;document.getElementById('reportBox').innerHTML=`<div class="report-head"><h1>نموذج زيارة صفية</h1><p>إعداد: ${AUTHOR}</p></div><table><tr><th>اسم المعلم</th><td></td><th>المادة</th><td></td></tr><tr><th>الصف</th><td></td><th>التاريخ</th><td></td></tr></table><h2>المشاهدات</h2><ul>${visitEvidence.map(x=>`<li>□ ${x}</li>`).join('')}</ul><h2>نقاط القوة</h2><p style="height:90px;border:1px solid #ccc"></p><h2>فرص التحسين والتوصيات</h2><p style="height:120px;border:1px solid #ccc"></p><div class="sign"><div class="sigbox">الزائر</div><div class="sigbox">المعلم</div></div>`;showSec('reports');window.print();setTimeout(()=>{document.getElementById('reportBox').innerHTML=old},500)}
+init();
+</script>
+</body>
+</html>
